@@ -1,0 +1,283 @@
+header {
+    font-family: 'Oxygen', sans-serif;
+    background-color: whitesmoke;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #333333;
+}
+
+h1 {
+    color: black;
+    font-size: 8rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2 {
+    text-transform: capitalize;
+}
+
+p {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    border: black;
+}
+
+/*
+=======================
+Navigation Bar
+=======================
+*/
+
+.nav-container {
+    width: 100%; 
+    height: auto;
+    background-color: #333333; 
+    border-bottom: 1px solid gray;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+}  
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.nav-item {
+    color: white;
+    size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*Links inside dropdown menu */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {display: block;} /*show dropdown on hover*/
+
+/*
+=======================
+Staking dApp
+=======================
+*/
+
+.section-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.connect-wallet {
+    margin-top: 3vw;
+}
+
+.connect-btn {
+    height: auto;
+    min-width: 300px;
+    background: #f3c388;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.box {      
+    border-radius: 20px;
+    background-color: #7a8d98;
+    margin-right: 3vw;
+    margin-top: 3vw;
+}
+
+/* style box titles
+=============================================== */
+.title {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.staking-title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*=============================================*/
+
+/* stake, balances, and pool box grid set-up 
+================================================*/
+.stake-fibless {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 8vw auto auto auto;
+    align-items: center;
+    justify-items: start;
+    justify-content: space-between;
+}
+
+.balances {
+    display: grid;
+    grid-template-rows: 8vw auto auto auto;
+}
+
+.pool {
+    display: grid;
+    grid-template-rows: 8vw auto auto;
+}
+/*===============================================*/
+
+.input-box, .output-box {
+    color: blue;
+    font-weight: bold;
+    width: 5vw;
+    font-size: 18px;
+    text-indent: 1vw;
+    border-radius: 5px;
+}
+
+.stake-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.btn {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #f3c388;
+    margin: 5px 10px 10px 5px;
+    height: 5vw;
+}
+
+.max-btn { height:3vw; }
+
+.stake-btn, .unstake-btn, .redeem-btn { 
+    width: 12vw;
+ }
+
+
+
+/*
+=======================
+form
+=======================
+*/
+
+.form-control {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: top;
+    justify-content: space-between;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.box {
+    padding: 10%;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    outline-style: outset;
+    outline-color: gray;
+    outline-width: 0.3rem;
+    padding: 5%;
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.form-item {
+    margin-bottom: 0.8rem;
+}
+
+.submit-btn {
+    background-color: #f44336;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 10%;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.input-box {
+    border: 2px solid black;
+    padding: 5px 0px;
+    border-radius: 5%;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+
+.map {
+    border: 5px solid #555;
+}
+
+/*
+=======================
+footer
+=======================
+*/
+
+footer {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #333333;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid grey
+}
+
+.footer-para {
+    color: white;
+    size: 5 rem;
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 10%;
+}

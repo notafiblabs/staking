@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotaFib Labs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <img src="./logo.png" alt="logo" class="logo" />
+        <a class="nav-item" href="/home">home</a>
+        <a class="nav-item" href="/staking">staking</a>
+        <div class="dropdown">
+            <a class="nav-item">NFT maker</a>
+            <div class="dropdown-content">
+                <a href="/map">maps</a>
+                <a href="/art">art</a>
+                <a href="/music">music</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="nav-item">mini games</a>
+            <div class="dropdown-content">
+                <a href="/tile-wars">tile wars</a>
+            </div> 
+        </div>
+        <a class="nav-item" href="/how-to">how to</a>
+    </nav>
+    <section class="section-container">
+        <div class="connect-wallet" style="justify-self: left;">
+            <div><button class="connect-btn">Connect Wallet</button></div>
+        </div>
+        <div class="box pool">
+            <div class = "title pool-title">pool</div>
+            <div>
+                <label class="stake-text" for="total-fibless">fibless staked: </label>
+                <output class="output-box" name="fibless-staked">100</output>
+            </div>
+            <div>
+                <label class="stake-text" for="total-staked">number of wallets: </label>
+                <output class="output-box" name="wallets">100</output>                 
+            </div>    
+        </div>
+        <div class="box stake-fibless">
+            <div class ="title staking-title">stake, unstake, redeem</div>
+            <div><button class="btn stake-btn">stake</button></div>
+            <div>
+                <input class="input-box" type="text" name="stake-percent" value=""/>
+                <label for="stake-percent" class="stake-text"> percent</label>
+            </div>
+            <div><button class="btn max-btn" name="max-stake">max</button></div>
+            <div><button class="btn unstake-btn">unstake</button></div>
+            <div>
+                <input class="input-box" type="text" name="stake-percent" value=""/>
+                <label for="stake-percent" class="stake-text"> percent</label>
+            </div>
+            <div><button class="btn max-btn" name="max-unstake">max</button></div>
+            <div><button class="btn redeem-btn">redeem</button></div>
+            <div>
+                <input class="input-box" type="text" name="stake-percent" value=""/>
+                <label for="stake-percent" class="stake-text"> percent</label>
+            </div>
+            <div><button class="btn max-btn" name="max-redeem">max</button></div>    
+        </div>
+        <div class="box balances">
+            <div class="title balance-title">balances</div>
+            <div>
+                <label class="stake-text" for="total-fibless">total fibless: </label>
+                <output class="output-box" name="total-fibless"></output>
+            </div>
+            <div>
+                <label class="stake-text" for="total-staked">total staked: </label>
+                <output class="output-box" name="total-staked"></output>
+            </div>
+            <div>
+                <label class="stake-text" for="duration">duration of stake: </label>
+                <output class="output-box" name="duration">8</output>
+            </div>
+            <div>
+                <label class="stake-text" for="available-redeem">available to redeem: </label>
+                <output class="output-box" name="available-redeem">5</output> 
+            </div>   
+        </div>
+    </section>    
+</body>
+<footer>
+    <p class="footer-para">A NotaFib Labs Product</p>
+</footer>
+</html>
