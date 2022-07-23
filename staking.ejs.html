@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Tapestry&display=swap" rel="stylesheet">
+    <title>NotaFib Labs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <img src="./logo.png" alt="logo" class="logo" / >
+        <a class="nav-item" href="/home">home</a>
+        <a class="nav-item" href="/staking">staking</a>
+        <div class="dropdown">
+            <a class="nav-item">NFT maker</a>
+            <div class="dropdown-content">
+                <a href="/map">maps</a>
+                <a href="/art">art</a>
+                <a href="/music">music</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="nav-item">mini games</a>
+            <div class="dropdown-content">
+                <a href="/tile-wars">tile wars</a>
+            </div> 
+        </div>
+        <a class="nav-item" href="/how-to">how to</a>
+    </nav>
+    <section class="section-container">
+        <div></div>
+        <div class = "title pool-title" style="align-self: end;">pool</div>
+        <div class="connect-wallet" style="justify-self: left;">
+            <div><button class="connect-btn">Connect Wallet</button></div>
+        </div>
+        <div class="stats pool">
+            <div>
+                <label class="stake-text" for="total-fibless">fibless staked: </label>
+                <output class="output-box" name="fibless-staked">100</output>
+            </div>
+            <div>
+                <label class="stake-text" for="total-staked">number of wallets: </label>
+                <output class="output-box" name="wallets">100</output>                 
+            </div>    
+        </div>
+        <div class ="title staking-title" style="align-self: end;">stake, unstake, redeem</div>
+        <div class="title balance-title" style="align-self: end;">balances</div>
+        <div class="stats stake-fibless">
+            <div><button class="btn stake-btn">stake</button></div>
+            <div><button class="btn unstake-btn">unstake</button></div>
+            <div><button class="btn redeem-btn">redeem</button></div>  
+            <div>
+                <input class="input-box" type="text" name="stake-percent" value="Custom"/>
+                <label for="stake-percent" class="stake-text">%</label>
+            </div>
+            <div><button class="btn all-btn" name="stake-all">all</button></div>
+            <div></div>
+        </div>
+        <div class="stats balances">
+            <div>
+                <label class="stake-text" for="total-fibless">total fibless: </label>
+                <output class="output-box" name="total-fibless"></output>
+            </div>
+            <div>
+                <label class="stake-text" for="total-staked">total staked: </label>
+                <output class="output-box" name="total-staked"></output>
+            </div>
+            <div>
+                <label class="stake-text" for="duration">duration of stake: </label>
+                <output class="output-box" name="duration">8</output>
+            </div>
+            <div>
+                <label class="stake-text" for="available-redeem">available to redeem: </label>
+                <output class="output-box" name="available-redeem">5</output> 
+            </div>   
+        </div>
+    </section>    
+</body>
+<footer>
+    <p class="footer-para">A NotaFib Labs Product</p>
+</footer>
+</html>
